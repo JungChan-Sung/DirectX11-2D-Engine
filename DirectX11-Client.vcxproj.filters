@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility">
+      <UniqueIdentifier>{92c869cb-0176-4798-933c-20c89feeaa8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine">
+      <UniqueIdentifier>{73b37dbd-3a28-48ed-a19b-f8dfe6fa9f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game">
+      <UniqueIdentifier>{4f2488c0-ab76-4fa7-8a94-fd1960554a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility">
+      <UniqueIdentifier>{42baa176-d72b-4739-9399-c64616b04f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine">
+      <UniqueIdentifier>{d37db195-47ba-4b89-9e90-31d4415edd3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game">
+      <UniqueIdentifier>{767ce856-668c-4d44-a8bd-2295140eaf71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Exception">
+      <UniqueIdentifier>{d1fe39ab-0918-4c9c-9fbc-973dafb3336d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Exception">
+      <UniqueIdentifier>{61282b29-4314-40f4-9fd0-35b5d2416e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Log">
+      <UniqueIdentifier>{4560eadb-c953-4d1b-87ed-7c67918ada48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Log">
+      <UniqueIdentifier>{b07fb905-3a2e-4e6b-8743-0fa6ab082056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Pattern">
+      <UniqueIdentifier>{0615784c-dae9-4dd0-9ceb-cf85fd48d363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Pattern">
+      <UniqueIdentifier>{954d8b49-32a3-4447-b742-0529701acba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Utility">
+      <UniqueIdentifier>{18db9c9b-46a2-45c0-a8ba-69df3a105124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Utility">
+      <UniqueIdentifier>{29e0622f-1dc9-44bd-9844-d2952141b122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics">
+      <UniqueIdentifier>{d4429d53-f468-4239-91cd-01edf5b17d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Input">
+      <UniqueIdentifier>{a64d2137-28d8-481d-afc2-319da7a2e5f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Manager">
+      <UniqueIdentifier>{cd8726e4-de33-4299-9351-b6536726369f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Timer">
+      <UniqueIdentifier>{eaaba3ea-4e95-400a-9e1a-c9d2fb0e542d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Utility">
+      <UniqueIdentifier>{ed6b3116-4850-471c-8fe4-1719df0a1617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Window">
+      <UniqueIdentifier>{cba0e5f1-d450-4318-a018-b1ffa7393a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics">
+      <UniqueIdentifier>{35652957-f35c-4334-986f-a108fd470877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Input">
+      <UniqueIdentifier>{31bef933-9928-4f72-81f4-7b10fbbb39af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Manager">
+      <UniqueIdentifier>{0cd48761-021f-4d24-a48b-1115e489bdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Timer">
+      <UniqueIdentifier>{769e5564-cc77-4345-ade3-bfafc03f04bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Utility">
+      <UniqueIdentifier>{50833b7b-3edc-4659-8eeb-82844eefa0ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Window">
+      <UniqueIdentifier>{0b247df9-dd2d-4ff6-a11b-24d7282f8e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Input\Keyboard">
+      <UniqueIdentifier>{921d78d4-0912-4642-be1a-84d7d698c179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Input\Mouse">
+      <UniqueIdentifier>{0e6f85ff-ecd2-45cc-9038-de28bbe58695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Input\Keyboard">
+      <UniqueIdentifier>{01eb8c75-e5bf-4fd2-8654-f369ee77d47c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Input\Mouse">
+      <UniqueIdentifier>{f9937c97-e556-46a8-ac5d-1d2a9d9d6884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Common">
+      <UniqueIdentifier>{a86b356e-6f35-4dd1-8029-14407cfcf795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Common">
+      <UniqueIdentifier>{b0ffe109-dc6c-4c26-ac17-10e8d35b3fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Resource">
+      <UniqueIdentifier>{db499fff-4158-45e5-976f-6de2092b605f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Resource\Texture">
+      <UniqueIdentifier>{df8f4a77-413a-48ac-a49c-974cedbef00e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Resource\Shader">
+      <UniqueIdentifier>{8fe15b69-5499-4b1b-9ec4-f8b99963756c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Resource">
+      <UniqueIdentifier>{094ea2cd-9b96-423b-9b34-5831835b5def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Resource\Buffer">
+      <UniqueIdentifier>{3cf36393-4653-435d-ba79-780ac9b46121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Resource\Texture">
+      <UniqueIdentifier>{59b87992-4d70-4801-845c-c097b5143747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Resource\Shader">
+      <UniqueIdentifier>{89ae4107-913b-4ed2-9d04-d31df93e6922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Resource\Buffer">
+      <UniqueIdentifier>{896f1402-2a77-4f53-8ab0-eac94ee525f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader">
+      <UniqueIdentifier>{ce7f46b6-2664-4880-b100-25b54722fa50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Manager">
+      <UniqueIdentifier>{b2b07902-2bfd-485c-bb39-0cd07a7e5807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Resource\Render">
+      <UniqueIdentifier>{1f5d31c9-5347-410c-bb05-00fbc9a5ef46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Resource\Render">
+      <UniqueIdentifier>{41740839-b190-440d-96d0-db68ad7ffd85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="설정 파일">
+      <UniqueIdentifier>{0ac133b5-5a2b-4d5d-8b03-bf36a9f8da1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="설정 파일\Config">
+      <UniqueIdentifier>{114be1fc-86d1-4428-8224-9cf9b0e9c9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="설정 파일\Json">
+      <UniqueIdentifier>{97dba14c-78f5-4351-9313-1c23691e2fa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\GameObject">
+      <UniqueIdentifier>{a20ccbd6-1ed7-44ff-8de1-0f2b4052690b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\GameObject\Component">
+      <UniqueIdentifier>{b6907e2c-c441-446a-981e-e4b2960f2201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\GameObject\Component\Render">
+      <UniqueIdentifier>{e8c44089-1858-4ef5-b53d-9b93bec89062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\GameObject">
+      <UniqueIdentifier>{6eb59b2f-344c-455b-bb73-25409207328d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\GameObject\Component">
+      <UniqueIdentifier>{2f54dbf5-6d7c-40c7-8014-5ed989bcce38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\GameObject\Component\Render">
+      <UniqueIdentifier>{51812eb4-2161-4378-ba29-6317a6dd7378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Manager">
+      <UniqueIdentifier>{178c090c-24d8-4eab-8d0b-e3dd5cebe2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory">
+      <UniqueIdentifier>{6cb8b855-c543-4d39-bba7-76343469f6ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory">
+      <UniqueIdentifier>{b6d39cb5-6c76-4a38-a587-d0ebdad1646e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Type">
+      <UniqueIdentifier>{eebda00b-dfac-43c0-9d24-958778c8128f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer">
+      <UniqueIdentifier>{a5efe28f-e8ca-41a0-99e4-c2088b25b7c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer">
+      <UniqueIdentifier>{96895b07-b8c4-4119-857d-ec4c286e713b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Shader">
+      <UniqueIdentifier>{f68418fc-9089-4416-916f-fcc9d86cfd8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Shader">
+      <UniqueIdentifier>{0be3dc35-8b82-4e21-a955-89ca407ae29a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Other">
+      <UniqueIdentifier>{5a428830-d9d7-4c1a-bd3e-3f3e28d4a42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Other">
+      <UniqueIdentifier>{53406842-e2c8-4e3a-b4c5-19471d8b5846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Scene">
+      <UniqueIdentifier>{a5d7f7e9-1779-4202-84df-fb1df5bff53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Manager\Component">
+      <UniqueIdentifier>{f81e4336-b4bb-4172-873b-acab8ea78148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Manager\Component">
+      <UniqueIdentifier>{e3e335c6-c240-496b-8c44-31745e2839d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Game\Scene">
+      <UniqueIdentifier>{944ab4b6-269c-4dda-a347-26265133a1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Data">
+      <UniqueIdentifier>{55ed0461-4de6-4178-9dce-af683514e32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Scene">
+      <UniqueIdentifier>{e84e5108-3457-45c1-b7fa-f8417b51510a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Observer">
+      <UniqueIdentifier>{84f11f25-6d83-4aa6-877c-883f36a5fa76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Game\Scene">
+      <UniqueIdentifier>{06c09f10-dfc0-4f17-a567-abba2102593e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Manager\Observer">
+      <UniqueIdentifier>{03d6dd8d-44e2-4208-a0ba-9721763c2956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\GameObject\Observer">
+      <UniqueIdentifier>{e75b6b24-7c6d-4e13-950b-f469cf5a79b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Option">
+      <UniqueIdentifier>{8b8f5cc6-f123-4902-a79c-9b2b9e2a4718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Message">
+      <UniqueIdentifier>{220e26f7-2634-4291-bd3b-4776ae519801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Message\Error">
+      <UniqueIdentifier>{de34c6af-6f27-4eff-a13e-240a9eec8f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Message">
+      <UniqueIdentifier>{13dd08b6-717a-4735-9337-a2978c49cd9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Message\Error">
+      <UniqueIdentifier>{09b0d88b-adb9-4810-b422-0fae5190afcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Message\Debug">
+      <UniqueIdentifier>{02d87a99-55be-4a22-875d-bddd7346bf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Message\Debug">
+      <UniqueIdentifier>{9202ed6b-0a21-4f6f-be50-78b98a10e65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Option">
+      <UniqueIdentifier>{01fdcee3-3454-4acc-bde8-64b15a2d1cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Config">
+      <UniqueIdentifier>{5ae4dd2c-f2b7-4bbe-87c6-b10559ba6dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Config">
+      <UniqueIdentifier>{7ade9cd9-4077-41f8-b640-e14e4be4bb02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Other\SamplerState">
+      <UniqueIdentifier>{301eb163-44a0-42ea-9fc3-b91e4e3a132d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Shader\Pixel">
+      <UniqueIdentifier>{5a12caf6-b46f-4aa7-8ea4-34c8470ed0fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Shader\Vertex">
+      <UniqueIdentifier>{10d685aa-326b-4f3a-805a-91cd2ba6357c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Other\SamplerState">
+      <UniqueIdentifier>{4c5585da-6ec6-48cf-968c-78d85e573d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer\Vertex">
+      <UniqueIdentifier>{5ed06104-789a-45cc-9048-54053c412759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer\Index">
+      <UniqueIdentifier>{3a9e0c4e-f0f6-4508-80df-8eebe2091396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer\Constant">
+      <UniqueIdentifier>{8bfd2035-69af-4ae2-a1ff-2bd55b0d7b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Shader\Vertex">
+      <UniqueIdentifier>{44e359ba-0ff2-4d9c-b97b-7f2ba7b24420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Shader\Pixel">
+      <UniqueIdentifier>{51892f69-d874-4003-9687-ef7795abc18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer\Vertex">
+      <UniqueIdentifier>{167a43e3-535e-49be-95e2-2aec8c16f998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer\Index">
+      <UniqueIdentifier>{4c3624b0-d820-4a6a-8491-2eeed19d034b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer\Constant">
+      <UniqueIdentifier>{dd353a12-58d4-4882-80ef-a2abd7c9c51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex">
+      <UniqueIdentifier>{5098baec-6478-408f-b2f5-2137abccd3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel">
+      <UniqueIdentifier>{e90bf3af-e81e-4ee0-a617-bb08fc0c477a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel">
+      <UniqueIdentifier>{d0312f47-5e3e-4513-a8be-2c22c4d61190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex">
+      <UniqueIdentifier>{651fe4b1-3186-4063-8396-745538fa3324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Engine\Graphics\Constant">
+      <UniqueIdentifier>{1d4815db-f14e-4bfd-adc3-d5274e137264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Constant">
+      <UniqueIdentifier>{1320b17a-aa88-4dcd-a8f7-b8aaaa6a604e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Constant">
+      <UniqueIdentifier>{de1ca6c6-adcc-4376-a88a-3b4f36bfd8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Message">
+      <UniqueIdentifier>{08a26ac9-5c75-44b2-adc1-9f00f24ebef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\CommonUtility\Message\Error">
+      <UniqueIdentifier>{029889e6-f31a-4890-bfb0-1384e5975c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Message">
+      <UniqueIdentifier>{e24cf2d3-df9f-4b7a-9b32-7fd8b3c8af9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\CommonUtility\Message\Error">
+      <UniqueIdentifier>{172f6523-aab7-424f-9115-76669247097f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirectX11-Client.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>소스 파일\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonUtility\Utility\ConfigParser.cpp">
+      <Filter>소스 파일\CommonUtility\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonUtility\Log\Log.cpp">
+      <Filter>소스 파일\CommonUtility\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonUtility\Utility\StringUtility.cpp">
+      <Filter>소스 파일\CommonUtility\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameEngine.cpp">
+      <Filter>소스 파일\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Window\WindowContainer.cpp">
+      <Filter>소스 파일\Engine\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Window\Window.cpp">
+      <Filter>소스 파일\Engine\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Timer\Timer.cpp">
+      <Filter>소스 파일\Engine\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input\Keyboard\KeyboardInput.cpp">
+      <Filter>소스 파일\Engine\Input\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input\Mouse\MouseInput.cpp">
+      <Filter>소스 파일\Engine\Input\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input\Input.cpp">
+      <Filter>소스 파일\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Graphics.cpp">
+      <Filter>소스 파일\Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonUtility\Utility\DirectXMathExtend.cpp">
+      <Filter>소스 파일\CommonUtility\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Common\Vertex.cpp">
+      <Filter>소스 파일\Engine\Graphics\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Common\Color32Bit.cpp">
+      <Filter>소스 파일\Engine\Graphics\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\IndexBuffer.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Texture\Texture.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Manager\ResourceManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Common\Color.cpp">
+      <Filter>소스 파일\Engine\Graphics\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Render\Sprite.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Render\TextureRenderResource.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Manager\GameObjectManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\GameObject.cpp">
+      <Filter>소스 파일\Engine\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\Component\Transform.cpp">
+      <Filter>소스 파일\Engine\GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\Component\Component.cpp">
+      <Filter>소스 파일\Engine\GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\Component\Render\Camera.cpp">
+      <Filter>소스 파일\Engine\GameObject\Component\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\Component\Render\Renderer.cpp">
+      <Filter>소스 파일\Engine\GameObject\Component\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameObject\Component\Render\SpriteRenderer.cpp">
+      <Filter>소스 파일\Engine\GameObject\Component\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Shader\VertexShader.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Shader\PixelShader.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\BaseConstantBuffer.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Shader\Shader.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\VertexBuffer.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Resource\Render\RenderResource.cpp">
+      <Filter>소스 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Manager\BufferManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Manager\ShaderManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Manager\TextureManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Manager\SpriteManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Manager\SceneManager.cpp">
+      <Filter>소스 파일\Engine\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Manager\Component\SpriteRendererManager.cpp">
+      <Filter>소스 파일\Engine\Manager\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Manager\Component\CameraManager.cpp">
+      <Filter>소스 파일\Engine\Manager\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scene\Scene.cpp">
+      <Filter>소스 파일\Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Scene\TestScene.cpp">
+      <Filter>소스 파일\Game\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Option\ScreenOption.cpp">
+      <Filter>소스 파일\Engine\Option</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Shader\ShaderFactoryManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Shader\Pixel\SpritePixelShaderFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Shader\Pixel</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Shader\Vertex\SpriteVertexShaderFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Shader\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Other\SamplerState\Texture2DSamplerStateFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Vertex\SpriteVertexBufferFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Index\SpriteIndexBufferFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\RenderMatrixConstantBufferFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\FontColorConstantBufferFactory.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryManager.cpp">
+      <Filter>소스 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Game.h">
+      <Filter>헤더 파일\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Exception\COMException.h">
+      <Filter>헤더 파일\CommonUtility\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Utility\ConfigParser.h">
+      <Filter>헤더 파일\CommonUtility\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Log\Log.h">
+      <Filter>헤더 파일\CommonUtility\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Pattern\Singleton.h">
+      <Filter>헤더 파일\CommonUtility\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Utility\StringUtility.h">
+      <Filter>헤더 파일\CommonUtility\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameEngine.h">
+      <Filter>헤더 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Window\Window.h">
+      <Filter>헤더 파일\Engine\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Window\WindowContainer.h">
+      <Filter>헤더 파일\Engine\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Timer\Timer.h">
+      <Filter>헤더 파일\Engine\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\Input.h">
+      <Filter>헤더 파일\Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\Keyboard\KeyboardInput.h">
+      <Filter>헤더 파일\Engine\Input\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input\Mouse\MouseInput.h">
+      <Filter>헤더 파일\Engine\Input\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Graphics.h">
+      <Filter>헤더 파일\Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Utility\DirectXMathExtend.h">
+      <Filter>헤더 파일\CommonUtility\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Utility\SafeDelete.h">
+      <Filter>헤더 파일\CommonUtility\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Common\Color32Bit.h">
+      <Filter>헤더 파일\Engine\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Common\Vertex.h">
+      <Filter>헤더 파일\Engine\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Common\RenderMatrix.h">
+      <Filter>헤더 파일\Engine\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\ResourceManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Utility\MathExtend.h">
+      <Filter>헤더 파일\CommonUtility\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Texture\Texture.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\VertexBuffer.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\IndexBuffer.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\ConstantBuffer.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Shader\VertexShader.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Common\Color.h">
+      <Filter>헤더 파일\Engine\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Manager\BufferManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Manager\ShaderManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Manager\TextureManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Manager\SpriteManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Render\Sprite.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Render\RenderResource.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Render\TextureRenderResource.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\GameObjectManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\GameObject.h">
+      <Filter>헤더 파일\Engine\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Component\Component.h">
+      <Filter>헤더 파일\Engine\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Component\Transform.h">
+      <Filter>헤더 파일\Engine\GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Component\Render\Camera.h">
+      <Filter>헤더 파일\Engine\GameObject\Component\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Component\Render\Renderer.h">
+      <Filter>헤더 파일\Engine\GameObject\Component\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Component\Render\SpriteRenderer.h">
+      <Filter>헤더 파일\Engine\GameObject\Component\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Shader\PixelShader.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\BaseConstantBuffer.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Resource\Shader\Shader.h">
+      <Filter>헤더 파일\Engine\Graphics\Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Type\BufferType.h">
+      <Filter>헤더 파일\Engine\Graphics\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Type\ShaderType.h">
+      <Filter>헤더 파일\Engine\Graphics\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Common\FontColor.h">
+      <Filter>헤더 파일\Engine\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Type\SamplerStateType.h">
+      <Filter>헤더 파일\Engine\Graphics\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\SceneManager.h">
+      <Filter>헤더 파일\Engine\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scene\Scene.h">
+      <Filter>헤더 파일\Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\Component\SpriteRendererManager.h">
+      <Filter>헤더 파일\Engine\Manager\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\Component\CameraManager.h">
+      <Filter>헤더 파일\Engine\Manager\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Data\ShaderData.h">
+      <Filter>헤더 파일\Engine\Graphics\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Data\TextureData.h">
+      <Filter>헤더 파일\Engine\Graphics\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Data\SpriteData.h">
+      <Filter>헤더 파일\Engine\Graphics\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Observer\IDeviceRequestObserver.h">
+      <Filter>헤더 파일\Engine\Graphics\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\TestScene.h">
+      <Filter>헤더 파일\Game\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Manager\Observer\ICreateGameObjectObserver.h">
+      <Filter>헤더 파일\Engine\Manager\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameObject\Observer\IComponentObserver.h">
+      <Filter>헤더 파일\Engine\GameObject\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Option\ScreenOption.h">
+      <Filter>헤더 파일\Engine\Option</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\WindowErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Config\EngineConfig.h">
+      <Filter>헤더 파일\Engine\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Config\ResourceConfig.h">
+      <Filter>헤더 파일\Engine\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\ShaderFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\ShaderFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Pixel\PixelShaderFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader\Pixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Pixel\SpritePixelShaderFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader\Pixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Vertex\SpriteVertexShaderFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Vertex\VertexShaderFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Shader\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\Texture2DSamplerStateFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Other\SamplerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\SpriteVertexBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\SpriteIndexBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\ConstantBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\RenderMatrixConstantBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\FontColorConstantBufferFactory.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryManager.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryHeaders.h">
+      <Filter>헤더 파일\Engine\Graphics\Factory\Buffer\Constant\Pixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\ManagerErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\InputErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\ImageExtensions.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\ResourceErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\TextureJsonConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\SpriteJsonConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\ShaderJsonConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\ResourceManagerErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\GraphicsErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\VertexShaderConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\InputLayoutConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Constant\PixelShaderConstants.h">
+      <Filter>헤더 파일\Engine\Graphics\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Message\Error\ResourceFactoryErrorMessage.h">
+      <Filter>헤더 파일\Engine\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Constant\CommonConstants.h">
+      <Filter>헤더 파일\CommonUtility\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Message\Error\ConfigParserErrorMessage.h">
+      <Filter>헤더 파일\CommonUtility\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Message\Error\LogErrorMessage.h">
+      <Filter>헤더 파일\CommonUtility\Message\Error</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonUtility\Message\Error\ExceptionErrorMessage.h">
+      <Filter>헤더 파일\CommonUtility\Message\Error</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\EngineConfig.cfg">
+      <Filter>설정 파일\Config</Filter>
+    </None>
+    <None Include="Resources\ShaderData.json">
+      <Filter>설정 파일\Json</Filter>
+    </None>
+    <None Include="Config\ResourceConfig.cfg">
+      <Filter>설정 파일\Config</Filter>
+    </None>
+    <None Include="Resources\TextureData.json">
+      <Filter>설정 파일\Json</Filter>
+    </None>
+    <None Include="Resources\SpriteData.json">
+      <Filter>설정 파일\Json</Filter>
+    </None>
+    <None Include="packages.config">
+      <Filter>설정 파일\Config</Filter>
+    </None>
+    <None Include="Config\Option.cfg">
+      <Filter>설정 파일\Config</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shaders\SpritePixelShader.hlsl">
+      <Filter>리소스 파일\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\SpriteVertexShader.hlsl">
+      <Filter>리소스 파일\Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

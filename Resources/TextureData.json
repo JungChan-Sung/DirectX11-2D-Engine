@@ -1,0 +1,24 @@
+{
+  "otherTextures": {
+    "blue": {
+      "path": "Resources/Textures/Blue.png",
+      "format": 87,
+      "samplerStateType": 0
+    },
+    "red": {
+      "path": "Resources/Textures/Red.png",
+      "format": 87,
+      "samplerStateType": 0
+    },
+    "white": {
+      "path": "Resources/Textures/White.png",
+      "format": 87,
+      "samplerStateType": 0
+    },
+    "yellow": {
+      "path": "Resources/Textures/Yellow.png",
+      "format": 87,
+      "samplerStateType": 0
+    }
+  }
+}

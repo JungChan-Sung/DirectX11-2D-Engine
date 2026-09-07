@@ -1,0 +1,12 @@
+{
+  "vertexShaders": {
+    "spriteVertexShader": {
+      "path": "Resources/Shaders/SpriteVertexShader.hlsl"
+    }
+  },
+  "pixelShaders": {
+    "spritePixelShader": {
+      "path": "Resources/Shaders/SpritePixelShader.hlsl"
+    }
+  }
+}

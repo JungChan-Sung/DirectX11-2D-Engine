@@ -1,0 +1,44 @@
+{
+  "otherSprites": {
+    "blue": {
+      "vertexBufferType": 0,
+      "indexBufferType": 0,
+      "textureGroupName": "otherTextures",
+      "textureName": "blue",
+      "pivot": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "order": 3
+    },
+    "red": {
+      "vertexBufferType": 0,
+      "indexBufferType": 0,
+      "textureGroupName": "otherTextures",
+      "textureName": "red",
+      "pivot": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "order": 5
+    },
+    "white": {
+      "vertexBufferType": 0,
+      "indexBufferType": 0,
+      "textureGroupName": "otherTextures",
+      "textureName": "white",
+      "pivot": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "order": 2
+    },
+    "yellow": {
+      "vertexBufferType": 0,
+      "indexBufferType": 0,
+      "textureGroupName": "otherTextures",
+      "textureName": "yellow",
+      "pivot": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "order": 6
+    }
+  }
+}

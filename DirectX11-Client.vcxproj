@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{badf470b-1ec9-4488-8889-0678488fad4a}</ProjectGuid>
+    <RootNamespace>DirectX11Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\DirectXTex\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\DirectXTex\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\DirectXTex\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\DirectXTex\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CommonUtility\Log\Log.cpp" />
+    <ClCompile Include="CommonUtility\Utility\ConfigParser.cpp" />
+    <ClCompile Include="CommonUtility\Utility\DirectXMathExtend.cpp" />
+    <ClCompile Include="CommonUtility\Utility\StringUtility.cpp" />
+    <ClCompile Include="Engine\GameEngine.cpp" />
+    <ClCompile Include="Engine\GameObject\Component\Component.cpp" />
+    <ClCompile Include="Engine\GameObject\Component\Render\Camera.cpp" />
+    <ClCompile Include="Engine\GameObject\Component\Render\Renderer.cpp" />
+    <ClCompile Include="Engine\GameObject\Component\Render\SpriteRenderer.cpp" />
+    <ClCompile Include="Engine\GameObject\Component\Transform.cpp" />
+    <ClCompile Include="Engine\GameObject\GameObject.cpp" />
+    <ClCompile Include="Engine\Graphics\Common\Color.cpp" />
+    <ClCompile Include="Engine\Graphics\Common\Color32Bit.cpp" />
+    <ClCompile Include="Engine\Graphics\Common\Vertex.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\FontColorConstantBufferFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\RenderMatrixConstantBufferFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Index\SpriteIndexBufferFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Vertex\SpriteVertexBufferFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Other\SamplerState\Texture2DSamplerStateFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Shader\Pixel\SpritePixelShaderFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Shader\ShaderFactoryManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Factory\Shader\Vertex\SpriteVertexShaderFactory.cpp" />
+    <ClCompile Include="Engine\Graphics\Graphics.cpp" />
+    <ClCompile Include="Engine\Graphics\Manager\BufferManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Manager\ShaderManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Manager\SpriteManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Manager\TextureManager.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\BaseConstantBuffer.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\IndexBuffer.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Buffer\VertexBuffer.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Render\RenderResource.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Render\Sprite.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Render\TextureRenderResource.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Shader\PixelShader.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Shader\Shader.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Shader\VertexShader.cpp" />
+    <ClCompile Include="Engine\Graphics\Resource\Texture\Texture.cpp" />
+    <ClCompile Include="Engine\Input\Input.cpp" />
+    <ClCompile Include="Engine\Input\Keyboard\KeyboardInput.cpp" />
+    <ClCompile Include="Engine\Input\Mouse\MouseInput.cpp" />
+    <ClCompile Include="Engine\Manager\Component\CameraManager.cpp" />
+    <ClCompile Include="Engine\Manager\Component\SpriteRendererManager.cpp" />
+    <ClCompile Include="Engine\Manager\GameObjectManager.cpp" />
+    <ClCompile Include="Engine\Manager\ResourceManager.cpp" />
+    <ClCompile Include="Engine\Manager\SceneManager.cpp" />
+    <ClCompile Include="Engine\Option\ScreenOption.cpp" />
+    <ClCompile Include="Engine\Scene\Scene.cpp" />
+    <ClCompile Include="Engine\Timer\Timer.cpp" />
+    <ClCompile Include="Engine\Window\Window.cpp" />
+    <ClCompile Include="Engine\Window\WindowContainer.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="DirectX11-Client.cpp" />
+    <ClCompile Include="Game\Scene\TestScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonUtility\Constant\CommonConstants.h" />
+    <ClInclude Include="CommonUtility\Exception\COMException.h" />
+    <ClInclude Include="CommonUtility\Log\Log.h" />
+    <ClInclude Include="CommonUtility\Message\Error\ExceptionErrorMessage.h" />
+    <ClInclude Include="CommonUtility\Message\Error\ConfigParserErrorMessage.h" />
+    <ClInclude Include="CommonUtility\Message\Error\LogErrorMessage.h" />
+    <ClInclude Include="CommonUtility\Pattern\Singleton.h" />
+    <ClInclude Include="CommonUtility\Utility\ConfigParser.h" />
+    <ClInclude Include="CommonUtility\Utility\SafeDelete.h" />
+    <ClInclude Include="CommonUtility\Utility\DirectXMathExtend.h" />
+    <ClInclude Include="CommonUtility\Utility\MathExtend.h" />
+    <ClInclude Include="CommonUtility\Utility\StringUtility.h" />
+    <ClInclude Include="Engine\Config\EngineConfig.h" />
+    <ClInclude Include="Engine\Config\ResourceConfig.h" />
+    <ClInclude Include="Engine\GameEngine.h" />
+    <ClInclude Include="Engine\GameObject\Component\Component.h" />
+    <ClInclude Include="Engine\GameObject\Component\Render\Camera.h" />
+    <ClInclude Include="Engine\GameObject\Component\Render\Renderer.h" />
+    <ClInclude Include="Engine\GameObject\Component\Render\SpriteRenderer.h" />
+    <ClInclude Include="Engine\GameObject\Component\Transform.h" />
+    <ClInclude Include="Engine\GameObject\GameObject.h" />
+    <ClInclude Include="Engine\GameObject\Observer\IComponentObserver.h" />
+    <ClInclude Include="Engine\Graphics\Common\Color.h" />
+    <ClInclude Include="Engine\Graphics\Common\Color32Bit.h" />
+    <ClInclude Include="Engine\Graphics\Common\FontColor.h" />
+    <ClInclude Include="Engine\Graphics\Common\RenderMatrix.h" />
+    <ClInclude Include="Engine\Graphics\Common\Vertex.h" />
+    <ClInclude Include="Engine\Graphics\Constant\ImageExtensions.h" />
+    <ClInclude Include="Engine\Graphics\Constant\InputLayoutConstants.h" />
+    <ClInclude Include="Engine\Graphics\Constant\PixelShaderConstants.h" />
+    <ClInclude Include="Engine\Graphics\Constant\ShaderJsonConstants.h" />
+    <ClInclude Include="Engine\Graphics\Constant\SpriteJsonConstants.h" />
+    <ClInclude Include="Engine\Graphics\Constant\TextureJsonConstants.h" />
+    <ClInclude Include="Engine\Graphics\Constant\VertexShaderConstants.h" />
+    <ClInclude Include="Engine\Graphics\Data\ShaderData.h" />
+    <ClInclude Include="Engine\Graphics\Data\SpriteData.h" />
+    <ClInclude Include="Engine\Graphics\Data\TextureData.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\ConstantBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\FontColorConstantBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Pixel\PixelShaderConstantBufferFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\RenderMatrixConstantBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Constant\Vertex\VertexShaderConstantBufferFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\IndexBufferFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Index\SpriteIndexBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\SpriteVertexBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Buffer\Vertex\VertexBufferFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\SamplerStateFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Other\SamplerState\Texture2DSamplerStateFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Pixel\PixelShaderFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Pixel\SpritePixelShaderFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\ShaderFactoryHeaders.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\ShaderFactoryManager.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Vertex\SpriteVertexShaderFactory.h" />
+    <ClInclude Include="Engine\Graphics\Factory\Shader\Vertex\VertexShaderFactory.h" />
+    <ClInclude Include="Engine\Graphics\Graphics.h" />
+    <ClInclude Include="Engine\Graphics\Manager\BufferManager.h" />
+    <ClInclude Include="Engine\Graphics\Manager\ShaderManager.h" />
+    <ClInclude Include="Engine\Graphics\Manager\SpriteManager.h" />
+    <ClInclude Include="Engine\Graphics\Manager\TextureManager.h" />
+    <ClInclude Include="Engine\Graphics\Observer\IDeviceRequestObserver.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\BaseConstantBuffer.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\ConstantBuffer.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\IndexBuffer.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Buffer\VertexBuffer.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Render\RenderResource.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Render\Sprite.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Render\TextureRenderResource.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Shader\PixelShader.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Shader\Shader.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Shader\VertexShader.h" />
+    <ClInclude Include="Engine\Graphics\Resource\Texture\Texture.h" />
+    <ClInclude Include="Engine\Graphics\Type\BufferType.h" />
+    <ClInclude Include="Engine\Graphics\Type\SamplerStateType.h" />
+    <ClInclude Include="Engine\Graphics\Type\ShaderType.h" />
+    <ClInclude Include="Engine\Input\Input.h" />
+    <ClInclude Include="Engine\Input\Keyboard\KeyboardInput.h" />
+    <ClInclude Include="Engine\Input\Mouse\MouseInput.h" />
+    <ClInclude Include="Engine\Manager\Component\CameraManager.h" />
+    <ClInclude Include="Engine\Manager\Component\SpriteRendererManager.h" />
+    <ClInclude Include="Engine\Manager\GameObjectManager.h" />
+    <ClInclude Include="Engine\Manager\Observer\ICreateGameObjectObserver.h" />
+    <ClInclude Include="Engine\Manager\ResourceManager.h" />
+    <ClInclude Include="Engine\Manager\SceneManager.h" />
+    <ClInclude Include="Engine\Message\Error\GraphicsErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\InputErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\ResourceErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\ResourceFactoryErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\ManagerErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\ResourceManagerErrorMessage.h" />
+    <ClInclude Include="Engine\Message\Error\WindowErrorMessage.h" />
+    <ClInclude Include="Engine\Option\ScreenOption.h" />
+    <ClInclude Include="Engine\Scene\Scene.h" />
+    <ClInclude Include="Engine\Timer\Timer.h" />
+    <ClInclude Include="Engine\Window\Window.h" />
+    <ClInclude Include="Engine\Window\WindowContainer.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\Scene\TestScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Config\EngineConfig.cfg" />
+    <None Include="Config\Option.cfg" />
+    <None Include="Config\ResourceConfig.cfg" />
+    <None Include="packages.config" />
+    <None Include="Resources\ShaderData.json" />
+    <None Include="Resources\SpriteData.json" />
+    <None Include="Resources\TextureData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shaders\SpritePixelShader.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\SpriteVertexShader.hlsl">
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets" Condition="Exists('packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>이 프로젝트는 이 컴퓨터에 없는 NuGet 패키지를 참조합니다. 해당 패키지를 다운로드하려면 NuGet 패키지 복원을 사용하십시오. 자세한 내용은 http://go.microsoft.com/fwlink/?LinkID=322105를 참조하십시오. 누락된 파일은 {0}입니다.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets'))" />
+  </Target>
+</Project>
